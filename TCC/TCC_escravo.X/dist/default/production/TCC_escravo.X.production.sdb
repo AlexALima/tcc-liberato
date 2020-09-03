@@ -1,0 +1,368 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F690 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\abdiv.c
+[v ___abdiv __abdiv `(c  1 e 1 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\abmod.c
+[v ___abmod __abmod `(c  1 e 1 0 ]
+"34 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\abtoft.c
+[v ___abtoft __abtoft `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"43 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"38 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\attoft.c
+[v ___attoft __attoft `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"33 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"3 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\bmul.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"7 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"25
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"49
+[v ___eetoc __eetoc `(uc  1 e 1 0 ]
+"57
+[v ___eetoi __eetoi `(ui  1 e 2 0 ]
+"65
+[v ___eetom __eetom `(um  1 e 3 0 ]
+"73
+[v ___eetol __eetol `(ul  1 e 4 0 ]
+"81
+[v ___ctoee __ctoee `(uc  1 e 1 0 ]
+"88
+[v ___itoee __itoee `(ui  1 e 2 0 ]
+"95
+[v ___mtoee __mtoee `(um  1 e 3 0 ]
+"102
+[v ___ltoee __ltoee `(ul  1 e 4 0 ]
+"109
+[v ___eetoft __eetoft `(f  1 e 3 0 ]
+"117
+[v ___eetofl __eetofl `(d  1 e 3 0 ]
+"125
+[v ___fttoee __fttoee `(f  1 e 3 0 ]
+"132
+[v ___fltoee __fltoee `(d  1 e 3 0 ]
+"63 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"87 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"50 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"52 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"16 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"17 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"45 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\lbdiv.c
+[v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\lbmod.c
+[v ___lbmod __lbmod `(uc  1 e 1 0 ]
+"28 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\lbtoft.c
+[v ___lbtoft __lbtoft `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"36 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"3 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\lmul.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"31 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\lttoft.c
+[v ___lttoft __lttoft `(f  1 e 3 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"29 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\lwtoft.c
+[v ___lwtoft __lwtoft `(f  1 e 3 0 ]
+"3 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\tmul.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"3 C:\Program Files (x86)\Microchip\xc8\v1.20\sources\pic\wmul.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"28 C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c
+[v _spi_init spi_init `(v  1 e 0 0 ]
+"41
+[v _spi_write spi_write `(v  1 e 0 0 ]
+"45
+[v _tabela tabela `(v  1 e 0 0 ]
+"117
+[v _xandi xandi `II(v  1 e 0 0 ]
+"131
+[v _gravar_eeprom gravar_eeprom `(v  1 e 0 0 ]
+"143
+[v _modo_programacao modo_programacao `(v  1 e 0 0 ]
+"185
+[v _AX7400 AX7400 `(v  1 e 0 0 ]
+"198
+[v _AX7402 AX7402 `(v  1 e 0 0 ]
+"211
+[v _AX7404 AX7404 `(v  1 e 0 0 ]
+"226
+[v _AX7408 AX7408 `(v  1 e 0 0 ]
+"239
+[v _AX7432 AX7432 `(v  1 e 0 0 ]
+"252
+[v _AX7447 AX7447 `(v  1 e 0 0 ]
+"271
+[v _AX7473 AX7473 `(v  1 e 0 0 ]
+"325
+[v _AX7474 AX7474 `(v  1 e 0 0 ]
+"380
+[v _AX7486 AX7486 `(v  1 e 0 0 ]
+"393
+[v _AX74165 AX74165 `(v  1 e 0 0 ]
+"435
+[v _AX74191 AX74191 `(v  1 e 0 0 ]
+"488
+[v _AX74192 AX74192 `(v  1 e 0 0 ]
+"545
+[v _select_portas select_portas `(v  1 e 0 0 ]
+"601
+[v _main main `(v  1 e 0 0 ]
+"155 C:\Program Files (x86)\Microchip\xc8\v1.20\include\pic16f690.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"204
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"242
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"309
+[v _INTCON INTCON `VEuc  1 e 1 @11 ]
+"641
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"647
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+"1138
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @129 ]
+"1207
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1256
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1294
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1500
+[v _OSCCON OSCCON `VEuc  1 e 1 @143 ]
+"1748
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+"2584
+[v _EEDAT EEDAT `VEuc  1 e 1 @268 ]
+"2589
+[v _EEDATA EEDATA `VEuc  1 e 1 @268 ]
+"2595
+[v _EEADR EEADR `VEuc  1 e 1 @269 ]
+"2933
+[v _ANSEL ANSEL `VEuc  1 e 1 @286 ]
+"2994
+[v _ANSELH ANSELH `VEuc  1 e 1 @287 ]
+"3031
+[v _EECON1 EECON1 `VEuc  1 e 1 @396 ]
+"3075
+[v _EECON2 EECON2 `VEuc  1 e 1 @397 ]
+"3233
+[v _BF BF `VEb  1 e 0 @1184 ]
+"3317
+[v _CARRY CARRY `VEb  1 e 0 @24 ]
+"3367
+[v _EEIE EEIE `VEb  1 e 0 @1132 ]
+"3369
+[v _EEIF EEIF `VEb  1 e 0 @108 ]
+"3375
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"3511
+[v _RA0 RA0 `VEb  1 e 0 @40 ]
+"3513
+[v _RA1 RA1 `VEb  1 e 0 @41 ]
+"3515
+[v _RA2 RA2 `VEb  1 e 0 @42 ]
+"3519
+[v _RA4 RA4 `VEb  1 e 0 @44 ]
+"3521
+[v _RA5 RA5 `VEb  1 e 0 @45 ]
+"3527
+[v _RB4 RB4 `VEb  1 e 0 @52 ]
+"3529
+[v _RB5 RB5 `VEb  1 e 0 @53 ]
+"3531
+[v _RB6 RB6 `VEb  1 e 0 @54 ]
+"3533
+[v _RB7 RB7 `VEb  1 e 0 @55 ]
+"3535
+[v _RC0 RC0 `VEb  1 e 0 @56 ]
+"3537
+[v _RC1 RC1 `VEb  1 e 0 @57 ]
+"3539
+[v _RC2 RC2 `VEb  1 e 0 @58 ]
+"3541
+[v _RC3 RC3 `VEb  1 e 0 @59 ]
+"3543
+[v _RC4 RC4 `VEb  1 e 0 @60 ]
+"3545
+[v _RC5 RC5 `VEb  1 e 0 @61 ]
+"3547
+[v _RC6 RC6 `VEb  1 e 0 @62 ]
+"3549
+[v _RC7 RC7 `VEb  1 e 0 @63 ]
+"3557
+[v _RD RD `VEb  1 e 0 @3168 ]
+"3595
+[v _SSPIE SSPIE `VEb  1 e 0 @1123 ]
+"3597
+[v _SSPIF SSPIF `VEb  1 e 0 @99 ]
+"3693
+[v _TRISB6 TRISB6 `VEb  1 e 0 @1078 ]
+"3711
+[v _TRISC7 TRISC7 `VEb  1 e 0 @1087 ]
+"3791
+[v _WR WR `VEb  1 e 0 @3169 ]
+"3793
+[v _WREN WREN `VEb  1 e 0 @3170 ]
+"20 C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c
+[v _DADO_RX DADO_RX `uc  1 e 1 0 ]
+"21
+[v _PORTA1 PORTA1 `uc  1 e 1 0 ]
+"22
+[v _PORTA2 PORTA2 `uc  1 e 1 0 ]
+"23
+[v _PORTA3 PORTA3 `uc  1 e 1 0 ]
+"24
+[v _PORTA4 PORTA4 `uc  1 e 1 0 ]
+"25
+[v _up1 up1 `b  1 e 0 0 ]
+"26
+[v _up2 up2 `b  1 e 0 0 ]
+"601
+[v _main main `(v  1 e 0 0 ]
+{
+"648
+} 0
+"545
+[v _select_portas select_portas `(v  1 e 0 0 ]
+{
+"598
+} 0
+"488
+[v _AX74192 AX74192 `(v  1 e 0 0 ]
+{
+"493
+[v AX74192@num num `uc  1 a 1 1 ]
+"543
+} 0
+"435
+[v _AX74191 AX74191 `(v  1 e 0 0 ]
+{
+"440
+[v AX74191@num num `uc  1 a 1 1 ]
+"486
+} 0
+"393
+[v _AX74165 AX74165 `(v  1 e 0 0 ]
+{
+"398
+[v AX74165@data data `uc  1 a 1 1 ]
+"432
+} 0
+"380
+[v _AX7486 AX7486 `(v  1 e 0 0 ]
+{
+"391
+} 0
+"325
+[v _AX7474 AX7474 `(v  1 e 0 0 ]
+{
+"377
+} 0
+"271
+[v _AX7473 AX7473 `(v  1 e 0 0 ]
+{
+"323
+} 0
+"252
+[v _AX7447 AX7447 `(v  1 e 0 0 ]
+{
+"257
+[v AX7447@num num `uc  1 a 1 2 ]
+"269
+} 0
+"45
+[v _tabela tabela `(v  1 e 0 0 ]
+{
+[v tabela@dado dado `uc  1 a 1 0 ]
+[v tabela@dado dado `uc  1 a 1 0 ]
+"113
+} 0
+"239
+[v _AX7432 AX7432 `(v  1 e 0 0 ]
+{
+"250
+} 0
+"226
+[v _AX7408 AX7408 `(v  1 e 0 0 ]
+{
+"237
+} 0
+"211
+[v _AX7404 AX7404 `(v  1 e 0 0 ]
+{
+"224
+} 0
+"198
+[v _AX7402 AX7402 `(v  1 e 0 0 ]
+{
+"209
+} 0
+"185
+[v _AX7400 AX7400 `(v  1 e 0 0 ]
+{
+"196
+} 0
+"143
+[v _modo_programacao modo_programacao `(v  1 e 0 0 ]
+{
+"183
+} 0
+"131
+[v _gravar_eeprom gravar_eeprom `(v  1 e 0 0 ]
+{
+[v gravar_eeprom@adr adr `uc  1 a 1 0 ]
+[v gravar_eeprom@adr adr `uc  1 a 1 0 ]
+"141
+} 0
+"41
+[v _spi_write spi_write `(v  1 e 0 0 ]
+{
+[v spi_write@dado dado `uc  1 a 1 0 ]
+[v spi_write@dado dado `uc  1 a 1 0 ]
+"43
+} 0
+"28
+[v _spi_init spi_init `(v  1 e 0 0 ]
+{
+"39
+} 0
+"117
+[v _xandi xandi `II(v  1 e 0 0 ]
+{
+"129
+} 0

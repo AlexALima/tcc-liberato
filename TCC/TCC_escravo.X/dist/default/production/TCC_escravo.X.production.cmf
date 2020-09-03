@@ -1,0 +1,900 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\ALEXAN~1\AppData\Local\Temp\sbfc.obj
+end_init CODE 0 11 11 2 2
+reset_vec CODE 0 0 0 2 2
+config CONFIG 0 2007 2007 1 2
+$dist/default/production\TCC_escravo.X.production.obj
+intentry CODE 0 4 4 D 2
+text19 CODE 0 F99 F99 2E 2
+text18 CODE 0 F5C F5C D 2
+text17 CODE 0 7F8 7F8 6 2
+text16 CODE 0 F80 F80 19 2
+text15 CODE 0 498 498 7C 2
+text14 CODE 0 FC7 FC7 39 2
+text13 CODE 0 79F 79F 39 2
+text12 CODE 0 6AC 6AC 43 2
+text11 CODE 0 766 766 39 2
+text10 CODE 0 72D 72D 39 2
+swtext5 CONST 0 7D8 7D8 20 2
+text9 CODE 0 417 417 81 2
+text8 CODE 0 6EF 6EF 3E 2
+text7 CODE 0 64B 64B 61 2
+text6 CODE 0 5EA 5EA 61 2
+text5 CODE 0 589 589 61 2
+text4 CODE 0 514 514 75 2
+text3 CODE 0 2AF 2AF C9 2
+text2 CODE 0 1AE 1AE 101 2
+swtext4 CONST 0 82A 82A E 2
+swtext3 CONST 0 81C 81C E 2
+swtext2 CONST 0 80E 80E E 2
+swtext1 CONST 0 800 800 E 2
+text1 CODE 0 13 13 19B 2
+maintext CODE 0 378 378 9F 2
+cstackBANK0 BANK0 1 20 20 4 1
+cstackCOMMON COMMON 1 70 70 5 1
+dataBANK0 BANK0 1 24 24 1 1
+dataCOMMON COMMON 1 75 75 4 1
+bitbssCOMMON COMMON 1 3C8 79 2 1
+cinit CODE 0 F69 F69 17 2
+idataBANK0 CODE 0 7FE 7FE 1 2
+idataCOMMON CODE 0 F58 F58 4 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 0025-006F 1
+BANK1 00A0-00EF 1
+BANK2 0120-016F 1
+CODE 0002-0003 2
+CODE 07FF-07FF 2
+CODE 0838-0F57 2
+COMMON 007A-007D 1
+CONST 0002-0003 2
+CONST 07FF-07FF 2
+CONST 0838-0F57 2
+EEDATA 2100-21FF 2
+ENTRY 0002-0003 2
+ENTRY 07FF-07FF 2
+ENTRY 0838-0F57 2
+IDLOC 2000-2003 2
+RAM 0025-006F 1
+RAM 00A0-00EF 1
+RAM 0120-016F 1
+SFR0 0000-001F 1
+SFR1 0080-009F 1
+SFR2 0100-011F 1
+SFR3 0180-01EF 1
+STRCODE 0002-0003 2
+STRCODE 07FF-07FF 2
+STRCODE 0838-0F57 2
+STRING 0002-0003 2
+STRING 07FF-07FF 2
+STRING 0838-0F57 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\TCC_escravo.X.production.obj
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":117 4 intentry CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":546 13 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":547 16 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":548 1A text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":549 1C text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":550 1E text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":551 22 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":552 25 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":553 26 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":554 2F text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":555 40 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":556 44 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":557 47 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":558 48 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":559 51 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":561 62 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":562 63 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":563 69 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":564 6F text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":565 76 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":566 84 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":567 93 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":568 A2 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":569 AB text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":561 AC text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":570 B8 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":571 B9 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":572 BF text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":573 C5 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":574 CC text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":575 DA text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":576 E9 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":577 F8 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":578 101 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":570 102 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":579 10E text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":580 10F text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":581 115 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":582 11B text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":583 122 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":584 130 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":585 13F text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":586 14E text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":587 157 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":579 158 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":588 164 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":589 165 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":590 16B text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":591 171 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":592 178 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":594 188 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":595 197 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":596 1A0 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":588 1A1 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":560 1AD text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":489 1AE text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":598 1AE text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":490 1B1 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":491 1B5 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":492 1B7 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":493 1B9 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":494 1BC text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":495 1BD text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":496 1BE text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":498 1BF text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":499 1C6 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":501 1C7 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":502 1CF text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":504 1D0 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":505 1D2 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":507 1D4 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":508 1D7 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":509 1DC text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":510 1DD text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":511 1E7 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":512 1F0 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":513 201 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":514 212 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":517 223 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":518 228 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":519 229 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":520 231 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":521 23A text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":522 24B text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":523 25C text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":527 265 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":528 267 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":529 268 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":530 269 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":531 26A text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":532 26C text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":533 26E text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":534 270 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":535 272 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":536 27B text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":537 28C text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":538 29D text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":497 2AE text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":436 2AF text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":543 2AF text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":437 2B2 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":438 2B6 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":439 2B8 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":440 2BA text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":441 2BD text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":442 2BE text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":443 2BF text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":445 2C0 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":446 2C7 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":447 2CF text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":449 2D0 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":450 2D6 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":451 2DC text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":453 2DD text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":455 2DF text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":456 2E2 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":457 2E5 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":458 2E6 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":459 2E8 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":460 2F2 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":462 2F3 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":464 2FB text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":465 304 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":466 315 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":467 326 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":471 32F text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":472 331 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":473 332 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":474 333 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":475 335 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":476 337 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":477 339 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":478 33B text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":479 344 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":480 355 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":481 366 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":444 377 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":486 378 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":602 378 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":603 37C maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":604 37F maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":605 380 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":606 384 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":607 387 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":608 38B maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":609 38D maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":610 38F maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":611 391 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":612 394 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":613 3AA maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":614 3AE maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":615 3B1 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":616 3B2 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":617 3B3 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":619 3B7 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":621 3BB maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":623 3BF maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":625 3C3 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":627 3C7 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":629 3CB maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":631 3CF maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":633 3D3 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":635 3D7 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":637 3DB maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":639 3DF maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":641 3E3 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":644 3E7 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":645 3E8 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":647 3E9 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":616 3EA maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":648 415 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":45 417 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":46 41A text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":47 41B text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":48 41D text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":49 41F text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":50 421 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":51 422 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":52 424 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":53 426 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":54 428 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":55 429 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":56 42B text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":57 42D text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":58 42F text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":59 430 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":60 432 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":61 434 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":62 436 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":63 437 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":64 439 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":65 43B text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":66 43D text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":67 43E text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":68 440 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":69 442 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":70 444 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":71 445 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":72 447 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":73 449 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":74 44B text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":75 44C text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":76 44E text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":77 450 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":78 452 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":79 453 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":80 455 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":81 457 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":82 459 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":83 45A text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":84 45C text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":85 45E text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":86 460 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":87 461 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":88 463 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":89 465 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":90 467 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":91 468 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":92 46A text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":93 46C text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":94 46E text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":95 46F text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":96 471 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":97 473 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":98 475 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":99 476 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":100 478 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":101 47A text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":102 47C text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":103 47D text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":104 47F text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":105 481 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":106 483 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":107 484 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":108 486 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":109 488 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":112 48A text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":46 48B text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":113 497 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":144 498 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":145 49B text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":146 49E text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":147 4A1 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":148 4A5 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":149 4A9 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":150 4AD text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":151 4B1 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":152 4B4 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":153 4B8 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":154 4B9 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":155 4BC text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":156 4C2 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":157 4C5 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":158 4C9 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":159 4CF text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":161 4D0 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":162 4D4 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":163 4D8 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":164 4DB text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":165 4DF text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":166 4E0 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":167 4E3 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":168 4E6 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":169 4EC text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":171 4ED text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":172 4F1 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":173 4F5 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":174 4F8 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":175 4FC text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":176 4FD text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":177 500 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":178 506 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":179 509 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":180 50D text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":181 513 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":183 514 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":394 514 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":395 517 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":396 51B text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":397 51D text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":398 51F text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":399 522 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":400 526 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":401 52A text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":402 52B text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":404 52C text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":405 52E text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":406 530 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":407 532 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":408 533 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":409 534 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":410 537 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":411 53A text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":412 53D text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":413 540 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":414 543 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":415 546 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":416 549 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":417 54C text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":418 555 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":419 55E text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":420 560 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":421 564 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":423 568 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":424 56B text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":425 56C text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":426 570 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":427 574 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":428 57D text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":429 586 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":403 588 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":381 589 text5 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":432 589 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":382 58C text5 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":383 590 text5 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":384 592 text5 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":386 594 text5 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":387 5AA text5 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":388 5BF text5 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":389 5D4 text5 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":385 5E9 text5 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":326 5EA text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":391 5EA text5 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":327 5ED text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":328 5F1 text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":329 5F3 text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":331 5F5 text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":332 5F8 text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":333 5FB text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":334 5FE text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":335 5FF text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":336 608 text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":340 611 text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":341 614 text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":342 615 text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":344 616 text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":345 619 text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":346 61A text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":348 61B text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":349 61E text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":350 61F text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":354 620 text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":355 622 text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":356 625 text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":357 628 text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":358 629 text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":359 632 text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":363 63B text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":364 63E text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":365 63F text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":367 640 text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":368 643 text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":369 644 text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":371 645 text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":372 648 text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":373 649 text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":330 64A text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":272 64B text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":377 64B text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":273 64E text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":274 652 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":275 654 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":277 656 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":278 659 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":279 65C text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":280 65F text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":281 660 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":282 669 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":286 672 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":287 675 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":288 676 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":290 677 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":291 67A text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":292 67B text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":294 67C text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":295 67F text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":296 680 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":300 681 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":301 683 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":302 686 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":303 689 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":304 68A text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":305 693 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":309 69C text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":310 69F text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":311 6A0 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":313 6A1 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":314 6A4 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":315 6A5 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":317 6A6 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":318 6A9 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":319 6AA text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":276 6AB text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":212 6AC text12 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":323 6AC text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":213 6AF text12 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":214 6B3 text12 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":215 6B5 text12 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":217 6B7 text12 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":218 6C1 text12 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":219 6CA text12 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":220 6D3 text12 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":221 6DC text12 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":222 6E5 text12 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":216 6EE text12 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":224 6EF text12 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":253 6EF text8 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":254 6F2 text8 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":255 6F6 text8 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":256 6F8 text8 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":257 6FA text8 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":259 6FD text8 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":260 701 text8 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":261 70D text8 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":259 711 text8 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":264 715 text8 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":265 71C text8 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":266 727 text8 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":240 72D text10 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":269 72D text8 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":241 730 text10 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":242 734 text10 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":243 736 text10 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":245 738 text10 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":246 744 text10 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":247 74F text10 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":248 75A text10 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":244 765 text10 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":227 766 text11 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":250 766 text10 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":228 769 text11 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":229 76D text11 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":230 76F text11 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":232 771 text11 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":233 77D text11 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":234 788 text11 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":235 793 text11 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":231 79E text11 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":199 79F text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":237 79F text11 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":200 7A2 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":201 7A6 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":202 7A8 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":204 7AA text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":205 7B6 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":206 7C1 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":207 7CC text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":203 7D7 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":46 7D8 swtext5 CONST
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":209 7D8 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":41 7F8 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":42 7FB text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":43 7FD text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":561 800 swtext1 CONST
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":570 80E swtext2 CONST
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":579 81C swtext3 CONST
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":588 82A swtext4 CONST
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":32 F5C text18 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":33 F5F text18 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":35 F60 text18 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":37 F64 text18 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":38 F67 text18 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":39 F68 text18 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":24 F69 cinit CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":131 F80 text16 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":132 F83 text16 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":133 F84 text16 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":134 F87 text16 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":135 F8D text16 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":136 F8F text16 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":137 F93 text16 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":138 F95 text16 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":139 F96 text16 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":140 F97 text16 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":141 F98 text16 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":119 F99 text19 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":120 F9F text19 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":121 FA2 text19 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":122 FA6 text19 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":123 FAE text19 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":126 FB1 text19 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":127 FB8 text19 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":129 FBB text19 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":186 FC7 text14 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":187 FCA text14 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":188 FCE text14 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":189 FD0 text14 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":191 FD2 text14 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":192 FDE text14 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":193 FE9 text14 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":194 FF4 text14 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":190 FFF text14 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC_escravo.X\TCC_escravo.c":196 1000 text14 CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__size_of_AX74165 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_BF 4A0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_RD C60 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__end_of_AX7408 F3E 0 CODE 0 text11 dist/default/production\TCC_escravo.X.production.obj
+_WR C61 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_RA0 28 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_RA1 29 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_RC0 38 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_RA2 2A 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_RC1 39 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_RC2 3A 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_RA4 2C 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_RC3 3B 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_RB4 34 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_RA5 2D 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_RC4 3C 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_RB5 35 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_RC5 3D 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_RB6 36 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_RC6 3E 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_RB7 37 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_RC7 3F 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__S0 2008 0 ABS 0 - -
+__S1 7A 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_GIE 5F 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_up1 3C8 -34F COMMON 1 bitbssCOMMON dist/default/production\TCC_escravo.X.production.obj
+_up2 3C9 -34F COMMON 1 bitbssCOMMON dist/default/production\TCC_escravo.X.production.obj
+__Hintentry 22 0 CODE 0 intentry -
+__Lintentry 8 0 CODE 0 intentry -
+__pintentry 8 0 CODE 0 intentry dist/default/production\TCC_escravo.X.production.obj
+__size_of_AX7408 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__CFG_PWRTE$ON 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_EEIE 46C 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_EEIF 6C 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_WREN C62 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_AX7408$100 22 0 BANK0 1 cstackBANK0 dist/default/production\TCC_escravo.X.production.obj
+_AX7400$90 23 0 BANK0 1 cstackBANK0 dist/default/production\TCC_escravo.X.production.obj
+gravar_eeprom@adr 20 0 BANK0 1 cstackBANK0 dist/default/production\TCC_escravo.X.production.obj
+__size_of_AX74191 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__size_of_AX74192 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_main 6F0 0 CODE 0 maintext dist/default/production\TCC_escravo.X.production.obj
+btemp 7E 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+start 22 0 CODE 0 init C:\Users\ALEXAN~1\AppData\Local\Temp\sbfc.obj
+_AX7408$101 23 0 BANK0 1 cstackBANK0 dist/default/production\TCC_escravo.X.production.obj
+_AX7402$92 20 0 BANK0 1 cstackBANK0 dist/default/production\TCC_escravo.X.production.obj
+_AX7402$93 21 0 BANK0 1 cstackBANK0 dist/default/production\TCC_escravo.X.production.obj
+_TRISA 85 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_SSPIE 463 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_TRISB 86 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_SSPIF 63 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_TRISC 87 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_PORTA 5 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\ALEXAN~1\AppData\Local\Temp\sbfc.obj
+_PORTB 6 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_PORTC 7 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_ANSEL 11E 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_EEADR 10D 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_AX7402$94 22 0 BANK0 1 cstackBANK0 dist/default/production\TCC_escravo.X.production.obj
+_EEDAT 10C 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+interrupt_function 8 0 CODE 0 intentry dist/default/production\TCC_escravo.X.production.obj
+_AX7402$95 23 0 BANK0 1 cstackBANK0 dist/default/production\TCC_escravo.X.production.obj
+__Hconfig 4010 0 CONFIG 0 config -
+_AX7432$103 20 0 BANK0 1 cstackBANK0 dist/default/production\TCC_escravo.X.production.obj
+__Lconfig 400E 0 CONFIG 0 config -
+_AX7400$87 20 0 BANK0 1 cstackBANK0 dist/default/production\TCC_escravo.X.production.obj
+_AX7432$104 21 0 BANK0 1 cstackBANK0 dist/default/production\TCC_escravo.X.production.obj
+_AX7400$88 21 0 BANK0 1 cstackBANK0 dist/default/production\TCC_escravo.X.production.obj
+_AX7400 1F8E 0 CODE 0 text14 dist/default/production\TCC_escravo.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_xandi 1F32 0 CODE 0 text19 dist/default/production\TCC_escravo.X.production.obj
+_AX7402 F3E 0 CODE 0 text13 dist/default/production\TCC_escravo.X.production.obj
+_AX7432 E5A 0 CODE 0 text10 dist/default/production\TCC_escravo.X.production.obj
+_AX7404 D58 0 CODE 0 text12 dist/default/production\TCC_escravo.X.production.obj
+_AX7473 C96 0 CODE 0 text7 dist/default/production\TCC_escravo.X.production.obj
+_AX7474 BD4 0 CODE 0 text6 dist/default/production\TCC_escravo.X.production.obj
+_AX7400$89 22 0 BANK0 1 cstackBANK0 dist/default/production\TCC_escravo.X.production.obj
+_AX7408 ECC 0 CODE 0 text11 dist/default/production\TCC_escravo.X.production.obj
+_AX7447 DDE 0 CODE 0 text8 dist/default/production\TCC_escravo.X.production.obj
+_AX7486 B12 0 CODE 0 text5 dist/default/production\TCC_escravo.X.production.obj
+_AX7408$98 20 0 BANK0 1 cstackBANK0 dist/default/production\TCC_escravo.X.production.obj
+_AX7432$105 22 0 BANK0 1 cstackBANK0 dist/default/production\TCC_escravo.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+_AX7408$99 21 0 BANK0 1 cstackBANK0 dist/default/production\TCC_escravo.X.production.obj
+__Lfunctab 0 0 CODE 0 functab -
+_PORTA1 76 0 COMMON 1 dataCOMMON dist/default/production\TCC_escravo.X.production.obj
+_PORTA2 77 0 COMMON 1 dataCOMMON dist/default/production\TCC_escravo.X.production.obj
+_PORTA3 78 0 COMMON 1 dataCOMMON dist/default/production\TCC_escravo.X.production.obj
+_EECON1 18C 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_PORTA4 24 0 BANK0 1 dataBANK0 dist/default/production\TCC_escravo.X.production.obj
+_EECON2 18D 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_TRISB6 436 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_TRISC7 43F 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_OPTION_REG 81 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+__size_of_spi_write 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_AX7432$106 23 0 BANK0 1 cstackBANK0 dist/default/production\TCC_escravo.X.production.obj
+_spi_init 1EB8 0 CODE 0 text18 dist/default/production\TCC_escravo.X.production.obj
+_ANSELH 11F 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_SSPBUF 13 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_OSCCON 8F 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+_INTCON B 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_SSPCON 14 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__end_of_select_portas 35C 0 CODE 0 text1 dist/default/production\TCC_escravo.X.production.obj
+__end_of_AX74191 6F0 0 CODE 0 text3 dist/default/production\TCC_escravo.X.production.obj
+__end_of_tabela 930 0 CODE 0 text9 dist/default/production\TCC_escravo.X.production.obj
+AX7447@num 22 0 BANK0 1 cstackBANK0 dist/default/production\TCC_escravo.X.production.obj
+__end_of_AX7400 2000 0 CODE 0 text14 dist/default/production\TCC_escravo.X.production.obj
+_tabela 82E 0 CODE 0 text9 dist/default/production\TCC_escravo.X.production.obj
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+__size_of_AX7404 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+_AX74191 55E 0 CODE 0 text3 dist/default/production\TCC_escravo.X.production.obj
+_AX74192 35C 0 CODE 0 text2 dist/default/production\TCC_escravo.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\TCC_escravo.X.production.obj
+_AX74165 A28 0 CODE 0 text4 dist/default/production\TCC_escravo.X.production.obj
+_spi_write FF0 0 CODE 0 text17 dist/default/production\TCC_escravo.X.production.obj
+saved_w 7E 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__Hinit 22 0 CODE 0 init -
+__Linit 22 0 CODE 0 init -
+__end_of_main 82E 0 CODE 0 maintext dist/default/production\TCC_escravo.X.production.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__pdataBANK0 24 0 BANK0 1 dataBANK0 dist/default/production\TCC_escravo.X.production.obj
+end_of_initialization 1EFA 0 CODE 0 cinit dist/default/production\TCC_escravo.X.production.obj
+__end_of_spi_write FFC 0 CODE 0 text17 dist/default/production\TCC_escravo.X.production.obj
+__end_of_gravar_eeprom 1F32 0 CODE 0 text16 dist/default/production\TCC_escravo.X.production.obj
+__end_of_AX7447 E5A 0 CODE 0 text8 dist/default/production\TCC_escravo.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+__Lstrings 0 0 ABS 0 strings -
+__size_of_AX7486 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 BANK3 1 bank3 -
+__Lbank3 0 0 BANK3 1 bank3 -
+___latbits 1 0 ABS 0 - C:\Users\ALEXAN~1\AppData\Local\Temp\sbfc.obj
+__Hpowerup 0 0 CODE 0 powerup -
+_SSPSTAT 94 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__ptext1 26 0 CODE 0 text1 dist/default/production\TCC_escravo.X.production.obj
+__ptext2 35C 0 CODE 0 text2 dist/default/production\TCC_escravo.X.production.obj
+__ptext3 55E 0 CODE 0 text3 dist/default/production\TCC_escravo.X.production.obj
+__ptext4 A28 0 CODE 0 text4 dist/default/production\TCC_escravo.X.production.obj
+__ptext5 B12 0 CODE 0 text5 dist/default/production\TCC_escravo.X.production.obj
+__ptext6 BD4 0 CODE 0 text6 dist/default/production\TCC_escravo.X.production.obj
+__ptext7 C96 0 CODE 0 text7 dist/default/production\TCC_escravo.X.production.obj
+__ptext8 DDE 0 CODE 0 text8 dist/default/production\TCC_escravo.X.production.obj
+__ptext9 82E 0 CODE 0 text9 dist/default/production\TCC_escravo.X.production.obj
+_DADO_RX 75 0 COMMON 1 dataCOMMON dist/default/production\TCC_escravo.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+__HdataCOMMON 0 0 ABS 0 dataCOMMON -
+__LdataCOMMON 0 0 ABS 0 dataCOMMON -
+__end_of_AX7432 ECC 0 CODE 0 text10 dist/default/production\TCC_escravo.X.production.obj
+__pdataCOMMON 75 0 COMMON 1 dataCOMMON dist/default/production\TCC_escravo.X.production.obj
+tabela@dado 20 0 BANK0 1 cstackBANK0 dist/default/production\TCC_escravo.X.production.obj
+__size_of_tabela 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__end_of_AX7473 D58 0 CODE 0 text7 dist/default/production\TCC_escravo.X.production.obj
+__end_of__initialization 1EFA 0 CODE 0 cinit dist/default/production\TCC_escravo.X.production.obj
+AX74191@num 21 0 BANK0 1 cstackBANK0 dist/default/production\TCC_escravo.X.production.obj
+AX74192@num 21 0 BANK0 1 cstackBANK0 dist/default/production\TCC_escravo.X.production.obj
+__size_of_AX7400 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__end_of_spi_init 1ED2 0 CODE 0 text18 dist/default/production\TCC_escravo.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+AX74165@data 21 0 BANK0 1 cstackBANK0 dist/default/production\TCC_escravo.X.production.obj
+__Hcinit 0 0 ABS 0 cinit -
+__Lcinit 0 0 ABS 0 cinit -
+__size_of_spi_init 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__pidataBANK0 FFC 0 CODE 0 idataBANK0 dist/default/production\TCC_escravo.X.production.obj
+__end_of_AX7404 DDE 0 CODE 0 text12 dist/default/production\TCC_escravo.X.production.obj
+__size_of_xandi 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__size_of_AX7474 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__ptext10 E5A 0 CODE 0 text10 dist/default/production\TCC_escravo.X.production.obj
+__end_of_AX7486 BD4 0 CODE 0 text5 dist/default/production\TCC_escravo.X.production.obj
+__ptext11 ECC 0 CODE 0 text11 dist/default/production\TCC_escravo.X.production.obj
+__ptext12 D58 0 CODE 0 text12 dist/default/production\TCC_escravo.X.production.obj
+__ptext13 F3E 0 CODE 0 text13 dist/default/production\TCC_escravo.X.production.obj
+__ptext14 1F8E 0 CODE 0 text14 dist/default/production\TCC_escravo.X.production.obj
+__size_of_AX7447 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__ptext15 930 0 CODE 0 text15 dist/default/production\TCC_escravo.X.production.obj
+__ptext16 1F00 0 CODE 0 text16 dist/default/production\TCC_escravo.X.production.obj
+__CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__ptext17 FF0 0 CODE 0 text17 dist/default/production\TCC_escravo.X.production.obj
+__ptext18 1EB8 0 CODE 0 text18 dist/default/production\TCC_escravo.X.production.obj
+__ptext19 1F32 0 CODE 0 text19 dist/default/production\TCC_escravo.X.production.obj
+__Hend_init 26 0 CODE 0 end_init -
+__Lend_init 22 0 CODE 0 end_init -
+__pswtext1 1000 0 CONST 0 swtext1 dist/default/production\TCC_escravo.X.production.obj
+_modo_programacao 930 0 CODE 0 text15 dist/default/production\TCC_escravo.X.production.obj
+__size_of_select_portas 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__pswtext2 101C 0 CONST 0 swtext2 dist/default/production\TCC_escravo.X.production.obj
+_gravar_eeprom 1F00 0 CODE 0 text16 dist/default/production\TCC_escravo.X.production.obj
+__pswtext3 1038 0 CONST 0 swtext3 dist/default/production\TCC_escravo.X.production.obj
+__pswtext4 1054 0 CONST 0 swtext4 dist/default/production\TCC_escravo.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__pswtext5 FB0 0 CONST 0 swtext5 dist/default/production\TCC_escravo.X.production.obj
+__end_of_xandi 1F8E 0 CODE 0 text19 dist/default/production\TCC_escravo.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\ALEXAN~1\AppData\Local\Temp\sbfc.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+intlevel1 0 0 CODE 0 functab C:\Users\ALEXAN~1\AppData\Local\Temp\sbfc.obj
+__end_of_AX7474 C96 0 CODE 0 text6 dist/default/production\TCC_escravo.X.production.obj
+intlevel2 0 0 CODE 0 functab C:\Users\ALEXAN~1\AppData\Local\Temp\sbfc.obj
+spi_write@dado 20 0 BANK0 1 cstackBANK0 dist/default/production\TCC_escravo.X.production.obj
+intlevel3 0 0 CODE 0 functab C:\Users\ALEXAN~1\AppData\Local\Temp\sbfc.obj
+intlevel4 0 0 CODE 0 functab C:\Users\ALEXAN~1\AppData\Local\Temp\sbfc.obj
+intlevel5 0 0 CODE 0 functab C:\Users\ALEXAN~1\AppData\Local\Temp\sbfc.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__end_of_modo_programacao A28 0 CODE 0 text15 dist/default/production\TCC_escravo.X.production.obj
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\TCC_escravo.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+start_initialization 1ED2 0 CODE 0 cinit dist/default/production\TCC_escravo.X.production.obj
+_select_portas 26 0 CODE 0 text1 dist/default/production\TCC_escravo.X.production.obj
+__size_of_AX7402 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__pmaintext 6F0 0 CODE 0 maintext dist/default/production\TCC_escravo.X.production.obj
+__end_of_AX74192 55E 0 CODE 0 text2 dist/default/production\TCC_escravo.X.production.obj
+__HidataCOMMON 0 0 ABS 0 idataCOMMON -
+__size_of_modo_programacao 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__LidataCOMMON 0 0 ABS 0 idataCOMMON -
+__pidataCOMMON 1EB0 0 CODE 0 idataCOMMON dist/default/production\TCC_escravo.X.production.obj
+__size_of_AX7432 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__end_of_AX7402 FB0 0 CODE 0 text13 dist/default/production\TCC_escravo.X.production.obj
+__initialization 1ED2 0 CODE 0 cinit dist/default/production\TCC_escravo.X.production.obj
+__end_of_AX74165 B12 0 CODE 0 text4 dist/default/production\TCC_escravo.X.production.obj
+__CFG_FOSC$INTRCIO 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__HbitbssCOMMON 0 0 ABS 0 bitbssCOMMON -
+__LbitbssCOMMON 0 0 ABS 0 bitbssCOMMON -
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__pbitbssCOMMON 3C8 -34F COMMON 1 bitbssCOMMON dist/default/production\TCC_escravo.X.production.obj
+__size_of_gravar_eeprom 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+__size_of_AX7473 0 0 ABS 0 - dist/default/production\TCC_escravo.X.production.obj
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta> <class name>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 2 2 CODE
+intentry 0 4 8 7D4 2 CODE
+config 0 2007 400E 1 2 CONFIG
+cstackCOMMON 1 70 70 A 1 COMMON
+cstackBANK0 1 20 20 5 1 BANK0
+text14 0 FC7 1F8E 39 2 CODE
+text19 0 F99 1F32 2E 2 CODE
+swtext5 0 7D8 FB0 20 2 CONST
+text16 0 F80 1F00 19 2 CODE
+cinit 0 F69 1ED2 17 2 CODE
+swtext1 0 800 1000 38 2 CONST
+text18 0 F5C 1EB8 D 2 CODE
+text17 0 7F8 FF0 7 2 CODE
+idataCOMMON 0 F58 1EB0 4 2 CODE

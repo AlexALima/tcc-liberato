@@ -1,0 +1,199 @@
+#include <htc.h>
+#include <stdio.h>
+
+__CONFIG(FOSC_INTRCIO & WDTE_OFF & PWRTE_ON & MCLRE_OFF & CP_OFF & CPD_OFF & BOREN_OFF & IESO_OFF & FCMEN_OFF);
+
+#ifndef _XTAL_FREQ
+	#define _XTAL_FREQ 8000000
+#endif
+
+unsigned char DADO_RX=0xFF;
+
+void init_serial(void) {
+    //configura a porta serial para 115.2kbps
+    SYNC = 0;
+    BRGH = 1;
+    BRG16 = 0;
+    SPBRG = 10;
+    SPBRGH = 0;
+    // }
+    SPEN = 1;
+    TX9 = 0;
+    TXEN = 1;
+
+    //CONFIGURAÇÃO DA RECEPÇÃO SERIAL
+    //***********   MUDAR ISSO AQUI PRA TER 1200 {
+    RCIE = 1; //HABILITA A INTERRUPÇÃO POR RECEPÇÃO
+    RX9 = 0; //RECEBER 8 BITS
+    CREN = 1; //HABILITA A RECEPÇÃO SERIAL
+}
+
+void tx_serial(unsigned char dado) {
+    while (!TRMT) {}; //verifica se o buffer de transmissão está ocupado
+    TXREG = dado; //transmite o dado
+}
+
+void interrupt xandi(){
+
+    if (RCIF && RCIE) {//testa se é recepção serial
+        if (FERR) NOP();
+        else DADO_RX=RCREG;
+    }
+
+    if (EEIF && EEIE) {//testa se é recepção serial
+        EEIF=0;
+    }
+}
+
+void gravar_eeprom(){
+    GIE=0;
+    WREN=1;
+    EEADR=0x01;
+    EEDAT=DADO_RX;
+    EECON2=0x55;
+    EECON2=0xAA;
+    WR=1;
+    GIE=1;
+    WREN=0;
+}
+
+void modo_programacao(){
+    TRISB=0b01111111;  // RB5=RX e RB7=TX
+    init_serial();
+    EEIE=1;
+    while(DADO_RX==0xFF);
+    if (DADO_RX!=0xFF) tx_serial(0xAA);
+    else modo_programacao();
+    while (DADO_RX==0xAC);
+    gravar_eeprom();
+    SLEEP();
+    RD=1;
+    NOP();
+    tx_serial(EEDAT);
+    DADO_RX=0xFF;
+}
+
+void AX7400(){
+    RA0=0;
+    TRISA=0b11111110;
+    TRISB=0b10111111;
+    TRISC=0b01101011;
+    while(1){
+        RC4=!(RA3&&RC5);
+        RC7=!(RC3&&RC6);
+        RB6=!(RB5&&RB4);
+        RC2=!(RC1&&RC0);
+    }
+}
+
+void AX7402(){
+
+}
+
+void AX7404(){
+    RA0=0;
+    TRISA=0b11111110;
+    TRISB=0b10101111;
+    TRISC=0b01010101;
+    while(1){
+        RC5=!RA3;
+        RC3=!RC4;
+        RC7=!RC6;
+        RB6=!RB5;
+        RB4=!RC2;
+        RC1=!RC0;
+    }
+}
+
+void AX7408(){
+    RA0=0;
+    TRISA=0b11111110;
+    TRISB=0b10111111;
+    TRISC=0b01101011;
+    while(1){
+        RC4=(RA3&&RC5);
+        RC7=(RC3&&RC6);
+        RB6=(RB5&&RB4);
+        RC2=(RC1&&RC0);
+    }
+}
+
+void AX7432(){
+    RA0=0;
+    TRISA=0b11111110;
+    TRISB=0b10111111;
+    TRISC=0b01101011;
+    while(1){
+        RC4=(RA3||RC5);
+        RC7=(RC3||RC6);
+        RB6=(RB5||RB4);
+        RC2=(RC1||RC0);
+    }
+}
+
+
+
+void main(){
+    OSCCON=0b01110000; // 8MHz
+    ANSEL=0;
+    ANSELH=0;
+    TRISA=0x0b11111110;
+    RA0=1;
+    TRISB=0xFF;
+    TRISC=0xFF;
+    OPTION_REG=0; // Pull-up ativado
+    WPUA=0b00100000; // Somente RA5 com pull-up ativado
+    WPUB=0;
+    INTCON=0b11000000; // GIE=1 e PIE=1
+    EECON1=0;
+    while(RA5==0) modo_programacao();// Está no programador
+    EEADR=0x01;
+    RD=1;
+    NOP();
+    switch(EEDAT){
+        case 0:
+            AX7400();
+            break;
+
+        case 2:
+            break;
+
+        case 4:
+            AX7404();
+            break;
+
+        case 8:
+            AX7408();
+            break;
+
+        case 32:
+            AX7432();
+            break;
+
+        case 47:
+            break;
+
+        case 73:
+            break;
+
+        case 74:
+            break;
+
+        case 161:
+            break;
+
+        case 165:
+            break;
+
+        case 191:
+            break;
+
+        case 193:
+            break;
+
+        default:
+            GIE=0;
+            SLEEP();
+            break;
+    }
+}

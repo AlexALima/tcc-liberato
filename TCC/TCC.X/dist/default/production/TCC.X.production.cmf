@@ -1,0 +1,1031 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\ALEXAN~1\AppData\Local\Temp\s7q0.obj
+end_init CODE 0 12 12 3 2
+reset_vec CODE 0 0 0 3 2
+config CONFIG 0 2007 2007 2 2
+$dist/default/production\TCC.X.production.obj
+intentry CODE 0 4 4 E 2
+text24 CODE 0 936 936 19 2
+text23 CODE 0 9EA 9EA 2C 2
+text22 CODE 0 91E 91E 18 2
+text21 CODE 0 914 914 A 2
+text20 CODE 0 99C 99C 27 2
+text19 CODE 0 906 906 6 2
+text18 CODE 0 AE7 AE7 5D 2
+text17 CODE 0 6C7 6C7 12A 2
+text16 CODE 0 B44 B44 7F 2
+text15 CODE 0 C94 C94 E7 2
+text14 CODE 0 A44 A44 30 2
+text13 CODE 0 E88 E88 178 2
+text12 CODE 0 7F1 7F1 E 2
+text11 CODE 0 94F 94F 19 2
+text10 CODE 0 A16 A16 2E 2
+text9 CODE 0 968 968 1A 2
+text8 CODE 0 3F2 3F2 A 2
+text7 CODE 0 9C3 9C3 27 2
+text6 CODE 0 90C 90C 8 2
+text5 CODE 0 395 395 5D 2
+text4 CODE 0 D7B D7B 10D 2
+text3 CODE 0 A74 A74 30 2
+text2 CODE 0 15 15 380 2
+text1 CODE 0 BC3 BC3 D1 2
+maintext CODE 0 AA4 AA4 43 2
+cstackBANK0 BANK0 1 20 20 27 1
+cstackCOMMON COMMON 1 70 70 E 1
+dataBANK0 BANK0 1 4D 4D 3 1
+bssBANK0 BANK0 1 48 48 5 1
+bitbssBANK0 BANK0 1 238 47 5 1
+cinit CODE 0 982 982 1A 2
+stringtext STRCODE 0 400 400 2C7 2
+strings STRING 0 800 800 12 2
+idataBANK0 CODE 0 3FC 3FC 3 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 0050-006F 1
+BANK1 00A0-00EF 1
+BANK2 0110-016F 1
+BANK3 0190-01EF 1
+CODE 0003-0003 2
+CODE 03FF-03FF 2
+CODE 07FF-07FF 2
+CODE 0812-0905 2
+CODE 1000-1FFF 2
+CONST 0003-0003 2
+CONST 03FF-03FF 2
+CONST 07FF-07FF 2
+CONST 0812-0905 2
+CONST 1000-1FFF 2
+EEDATA 2100-21FF 2
+ENTRY 0003-0003 2
+ENTRY 03FF-03FF 2
+ENTRY 07FF-07FF 2
+ENTRY 0812-0905 2
+ENTRY 1000-1FFF 2
+IDLOC 2000-2003 2
+RAM 0050-006F 1
+RAM 00A0-00EF 1
+RAM 0110-016F 1
+RAM 0190-01EF 1
+SFR0 0000-001F 1
+SFR1 0080-009F 1
+SFR2 0100-010F 1
+SFR3 0180-018F 1
+STRCODE 0003-0003 2
+STRCODE 03FF-03FF 2
+STRCODE 07FF-07FF 2
+STRCODE 0812-0905 2
+STRCODE 1000-1FFF 2
+STRING 0003-0003 2
+STRING 03FF-03FF 2
+STRING 07FF-07FF 2
+STRING 0812-0905 2
+STRING 1000-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\TCC.X.production.obj
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":429 4 intentry CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":263 15 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":264 19 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":265 1D text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":266 1E text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":267 1F text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":268 20 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":274 21 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":275 2C text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":276 2D text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":277 38 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":278 39 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":279 44 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":280 45 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":281 50 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":282 51 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":283 5C text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":284 5D text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":285 68 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":286 69 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":287 74 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":288 75 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":289 7B text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":290 7C text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":268 7D text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":269 81 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":270 8D text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":271 92 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":272 A5 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":273 AC text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":268 C8 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":294 C9 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":295 CA text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":296 D7 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":297 DD text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":298 DF text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":304 E0 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":305 EB text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":306 EC text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":307 F7 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":308 F8 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":309 103 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":310 104 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":311 10F text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":312 110 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":313 11B text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":314 11C text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":315 127 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":316 128 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":317 133 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":318 134 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":319 13A text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":320 13B text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":298 13C text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":299 140 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":300 14C text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":301 151 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":302 164 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":303 16B text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":298 187 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":324 188 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":325 189 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":326 196 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":327 1A5 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":328 1A7 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":334 1A8 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":335 1B3 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":336 1B4 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":337 1BF text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":338 1C0 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":339 1CB text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":340 1CC text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":341 1D7 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":342 1D8 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":343 1E3 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":344 1E4 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":345 1EF text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":346 1F0 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":347 1FB text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":348 1FC text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":349 202 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":350 203 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":328 204 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":329 208 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":330 214 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":331 219 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":332 22C text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":333 233 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":328 24F text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":354 250 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":355 251 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":356 25E text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":357 264 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":358 266 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":364 267 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":365 272 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":366 273 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":367 27E text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":368 27F text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":369 28A text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":370 28B text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":371 296 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":372 297 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":373 2A2 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":374 2A3 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":375 2AE text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":376 2AF text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":377 2BA text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":378 2BB text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":379 2C1 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":380 2C2 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":358 2C3 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":359 2C7 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":360 2D3 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":361 2D8 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":362 2EB text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":363 2F2 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":358 30E text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":384 30F text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":385 310 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":386 31D text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":387 32C text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":388 32D text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":389 338 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":390 33C text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":391 347 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":393 350 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":394 35B text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":395 35F text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":396 36A text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":398 373 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":399 37E text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":400 382 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":401 383 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":402 384 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":404 389 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":405 38C text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":406 38E text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":407 38F text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":261 394 text2 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":412 395 text2 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\doprnt.c":542 395 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\doprnt.c":545 39B text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\doprnt.c":547 3B4 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\doprnt.c":550 3B8 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\doprnt.c":551 3BE text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\doprnt.c":557 3BF text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\doprnt.c":644 3C2 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\doprnt.c":808 3C3 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\doprnt.c":818 3CE text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\doprnt.c":831 3D4 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\doprnt.c":644 3D5 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\doprnt.c":545 3F0 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\doprnt.c":1548 3F1 text5 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":103 3F2 text8 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":104 3F5 text8 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":105 3F6 text8 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":106 3FB text8 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":82 6C7 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":83 6CA text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":84 6CE text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":85 6DB text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":87 6DC text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":88 6DF text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":91 6E0 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":95 6E2 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":99 6E4 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":103 6E6 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":107 6E8 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":111 6EA text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":115 6EC text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":119 6EE text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":123 6F0 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":127 6F2 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":131 6F4 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":135 6F6 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":136 6F7 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":137 6FC text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":138 709 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":139 717 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":140 725 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":141 727 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":142 72A text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":143 72C text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":144 72D text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":145 72E text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":146 72F text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":149 730 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":152 734 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":85 735 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":153 763 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":154 765 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":155 770 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":156 774 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":157 77F text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":158 780 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":160 781 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":161 782 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":162 787 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":163 798 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":164 79F text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":165 7A8 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":166 7B6 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":167 7C4 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":168 7D2 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":169 7E0 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":171 7EE text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":55 7F1 text12 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":173 7F1 text17 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":56 7F4 text12 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":58 7F5 text12 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":59 7F9 text12 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":61 7FC text12 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":63 7FE text12 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":40 800 strings STRING
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":168 906 text19 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":169 907 text19 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":170 90B text19 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":168 90C text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":169 90F text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":170 913 text6 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":103 914 text21 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":104 915 text21 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":105 918 text21 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":106 91D text21 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":57 91E text22 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":58 921 text22 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":59 926 text22 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":60 92C text22 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":61 935 text22 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":65 936 text24 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":66 937 text24 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":67 93B text24 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":68 93E text24 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":69 93F text24 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":70 941 text24 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":71 945 text24 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":72 94B text24 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":73 94C text24 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":74 94D text24 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":65 94F text11 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":75 94F text24 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":66 952 text11 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":67 956 text11 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":68 957 text11 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":69 958 text11 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":70 95A text11 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":71 95E text11 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":72 964 text11 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":73 965 text11 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":74 966 text11 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":57 968 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":75 968 text11 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":58 96B text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":59 970 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":60 976 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":61 981 text9 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":76 99C text20 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":77 99D text20 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":80 99E text20 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":81 9A1 text20 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":83 9A2 text20 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":84 9A6 text20 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":86 9A7 text20 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":87 9AA text20 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":88 9AE text20 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":90 9AF text20 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":91 9B2 text20 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":93 9B6 text20 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":77 9B7 text20 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":94 9C2 text20 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":76 9C3 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":77 9C6 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":80 9C7 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":81 9CA text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":83 9CB text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":84 9CF text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":86 9D0 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":87 9D1 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":88 9D5 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":90 9D6 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":91 9D7 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":93 9DB text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":77 9DC text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":94 9E9 text7 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":39 9EA text23 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":40 9EB text23 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":41 9F0 text23 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":42 9F6 text23 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":43 A03 text23 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":44 A05 text23 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":45 A09 text23 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":46 A0E text23 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":47 A10 text23 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":48 A15 text23 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":39 A16 text10 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":40 A19 text10 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":41 A1E text10 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":42 A24 text10 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":43 A31 text10 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":44 A33 text10 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":45 A37 text10 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":46 A3C text10 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":47 A3E text10 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":48 A43 text10 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":251 A44 text14 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":252 A47 text14 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":253 A54 text14 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":254 A57 text14 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":255 A60 text14 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":256 A63 text14 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":257 A70 text14 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":258 A73 text14 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":251 A74 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":252 A77 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":253 A84 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":254 A87 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":255 A90 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":256 A93 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":257 AA0 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":258 AA3 text3 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":531 AA4 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":532 AA8 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":533 AAB maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":534 AAC maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":535 AAF maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":536 AB1 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":537 AB3 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":538 AB6 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":539 AB7 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":540 AB8 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":541 AB9 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":542 ABC maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":543 AC1 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":544 AC6 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":545 AC7 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":546 ACB maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":547 ACF maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":548 AD3 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":549 AD4 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":550 AD8 maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":551 ADB maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":552 ADE maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":553 ADF maintext CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":554 AE1 maintext CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\doprnt.c":542 AE7 text18 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":559 AE7 maintext CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\doprnt.c":545 AED text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\doprnt.c":547 B06 text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\doprnt.c":550 B0A text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\doprnt.c":551 B10 text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\doprnt.c":557 B11 text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\doprnt.c":644 B14 text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\doprnt.c":808 B15 text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\doprnt.c":818 B20 text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\doprnt.c":831 B26 text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\doprnt.c":644 B27 text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\doprnt.c":545 B42 text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.20\sources\common\doprnt.c":1548 B43 text18 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":415 B44 text16 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":416 B49 text16 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":417 B56 text16 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":418 B65 text16 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":419 B74 text16 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":420 B83 text16 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":421 B88 text16 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":422 B91 text16 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":423 BA0 text16 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":424 BAF text16 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":425 BBE text16 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":426 BC1 text16 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":427 BC2 text16 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":115 BC3 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":117 BC9 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":118 BCA text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":121 BCB text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":122 BD3 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":123 BD7 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":124 BD9 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":125 BE2 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":126 BE6 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":127 BEA text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":128 BEE text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":129 BF2 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":130 BF6 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":132 BF8 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":133 BFE text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":134 C04 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":135 C0A text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":136 C10 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":137 C15 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":138 C1B text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":139 C21 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":142 C27 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":143 C2A text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":144 C30 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":145 C33 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":146 C39 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":147 C3F text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":148 C45 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":149 C4B text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":150 C51 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":151 C57 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":152 C5D text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":154 C63 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":155 C69 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":156 C6F text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":157 C75 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":158 C7B text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":159 C81 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":160 C87 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":162 C8D text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":163 C90 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC/LCD_ModSauer.c":166 C93 text1 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":177 C94 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":178 C99 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":179 CAA text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":180 CAF text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":182 CB0 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":183 CB7 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":186 CB8 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":187 CBF text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":190 CC0 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":191 CC7 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":194 CC8 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":195 CCF text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":198 CD0 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":199 CD7 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":202 CD8 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":203 CDF text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":206 CE0 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":207 CE7 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":210 CE8 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":211 CEF text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":214 CF0 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":215 CF7 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":218 CF8 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":219 CFF text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":222 D00 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":223 D07 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":226 D08 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":227 D0F text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":230 D10 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":231 D15 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":232 D26 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":233 D2D text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":236 D2E text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":237 D35 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":240 D36 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":241 D3B text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":242 D44 text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":245 D4B text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":180 D4C text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":247 D7A text15 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":177 D7B text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":178 D80 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":179 D93 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":180 D9A text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":182 D9B text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":183 DA4 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":186 DA5 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":187 DAE text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":190 DAF text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":191 DB8 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":194 DB9 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":195 DC2 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":198 DC3 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":199 DCC text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":202 DCD text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":203 DD6 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":206 DD7 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":207 DE0 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":210 DE1 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":211 DEA text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":214 DEB text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":215 DF4 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":218 DF5 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":219 DFE text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":222 DFF text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":223 E08 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":226 E09 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":227 E12 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":230 E13 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":231 E18 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":232 E2B text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":233 E34 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":236 E35 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":237 E3E text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":240 E3F text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":241 E44 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":242 E4F text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":245 E58 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":180 E59 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":247 E87 text4 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":430 E88 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":431 E8B text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":432 E8C text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":433 E95 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":434 E99 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":435 E9A text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":436 E9C text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":437 E9D text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":438 E9E text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":439 E9F text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":440 EA0 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":441 EA5 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":442 EAA text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":443 EAE text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":444 EB1 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":445 EB3 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":446 EB4 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":449 EB5 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":450 EB7 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":451 EB8 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":452 EBA text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":453 EBB text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":455 EBC text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":456 EC1 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":457 EC5 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":461 ECA text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":462 ECD text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":463 ED1 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":464 ED2 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":465 EDB text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":466 EDF text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":467 EE0 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":469 EE2 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":470 EE4 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":473 EEC text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":474 EEE text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":476 EF8 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":479 EFF text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":480 F07 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":481 F0A text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":482 F12 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":483 F13 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":484 F17 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":485 F22 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":486 F26 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":487 F27 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":488 F28 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":489 F29 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":490 F2D text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":491 F32 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":493 F33 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":494 F36 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":495 F37 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":496 F38 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":497 F3D text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":498 F4E text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":499 F55 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":500 F5E text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":501 F6C text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":502 F7A text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":503 F88 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":504 F96 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":505 FA4 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":507 FA9 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":511 FAB text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":512 FB3 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":513 FB6 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":514 FBE text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":515 FBF text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":516 FC0 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":517 FC1 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":518 FC6 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":519 FD3 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":520 FE1 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":521 FEF text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":522 FF0 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":523 FF3 text13 CODE
+"C:\Users\Alexandre\Documents\Colégio\micros\TCC\TCC.X\TCC_1.c":527 FF4 text13 CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_BF 4A0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_ON 238 -1F1 BANK0 1 bitbssBANK0 dist/default/production\TCC.X.production.obj
+i1printf@f 77 0 COMMON 1 cstackCOMMON dist/default/production\TCC.X.production.obj
+__end_ofi1_printf 1688 0 CODE 0 text18 dist/default/production\TCC.X.production.obj
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_oi 23A -1F1 BANK0 1 bitbssBANK0 dist/default/production\TCC.X.production.obj
+_ok 4F 0 BANK0 1 dataBANK0 dist/default/production\TCC.X.production.obj
+_RC0 38 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_RB1 31 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_RC1 39 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_RB2 32 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_RA4 2C 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_RA5 2D 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_RC6 3E 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_RB7 37 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_PR2 92 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__S0 2009 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Hintentry 24 0 CODE 0 intentry -
+__Lintentry 8 0 CODE 0 intentry -
+__size_of_lcd_clear 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__pintentry 8 0 CODE 0 intentry dist/default/production\TCC.X.production.obj
+_rec 23B -1F1 BANK0 1 bitbssBANK0 dist/default/production\TCC.X.production.obj
+_bip 14E8 0 CODE 0 text3 dist/default/production\TCC.X.production.obj
+__size_of_lcd_write 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__CFG_PWRTE$ON 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_TMR1 E 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_IOCB 96 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__size_ofi1_spi_read 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_RBIE 5B 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_RBIF 58 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_INTE 5C 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_INTF 59 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__CFG_BOR4V$BOR40V 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_acao D8E 0 CODE 0 text17 dist/default/production\TCC.X.production.obj
+_main 1548 0 CODE 0 maintext dist/default/production\TCC.X.production.obj
+btemp 7E 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_menu 1AF6 0 CODE 0 text4 dist/default/production\TCC.X.production.obj
+_cont 48 0 BANK0 1 bssBANK0 dist/default/production\TCC.X.production.obj
+start 24 0 CODE 0 init C:\Users\ALEXAN~1\AppData\Local\Temp\s7q0.obj
+_spi_read 129E 0 CODE 0 text11 dist/default/production\TCC.X.production.obj
+printf@ap 41 0 BANK0 1 cstackBANK0 dist/default/production\TCC.X.production.obj
+_TRISA 85 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_TRISB 86 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_TRISC 87 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_PORTA 5 0 ABS 0 - dist/default/production\TCC.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\ALEXAN~1\AppData\Local\Temp\s7q0.obj
+_PORTB 6 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_ANSEL 188 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_T1CON 10 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_T2CON 12 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_SSPEN A5 0 ABS 0 - dist/default/production\TCC.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\TCC.X.production.obj
+interrupt_function 8 0 CODE 0 intentry dist/default/production\TCC.X.production.obj
+__Hconfig 4012 0 CONFIG 0 config -
+__Lconfig 400E 0 CONFIG 0 config -
+__end_ofi1_putch 1218 0 CODE 0 text19 dist/default/production\TCC.X.production.obj
+__end_of__stringtab 1024 0 STRING 0 strings dist/default/production\TCC.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_xandi 1D10 0 CODE 0 text13 dist/default/production\TCC.X.production.obj
+_putch 1218 0 CODE 0 text6 dist/default/production\TCC.X.production.obj
+i1_bip 1488 0 CODE 0 text14 dist/default/production\TCC.X.production.obj
+_lcd_putc 1386 0 CODE 0 text7 dist/default/production\TCC.X.production.obj
+__end_of_lcd_putc 13D4 0 CODE 0 text7 dist/default/production\TCC.X.production.obj
+__end_of__stringdata D8E 0 STRCODE 0 stringtext dist/default/production\TCC.X.production.obj
+i1spi_read@rec 72 0 COMMON 1 cstackCOMMON dist/default/production\TCC.X.production.obj
+_enter 239 -1F1 BANK0 1 bitbssBANK0 dist/default/production\TCC.X.production.obj
+i1_printf 15CE 0 CODE 0 text18 dist/default/production\TCC.X.production.obj
+__size_ofi1_putch 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+i1_lcd_write 13D4 0 CODE 0 text23 dist/default/production\TCC.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Lfunctab 0 0 CODE 0 functab -
+_TRISC3 43B 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_TRISC5 43D 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_OPTION_REG 81 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__end_of_putch 1228 0 CODE 0 text6 dist/default/production\TCC.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+i1_lcd_clear 123C 0 CODE 0 text22 dist/default/production\TCC.X.production.obj
+_TMR1IE 460 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_TMR2IE 461 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_TMR1IF 60 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_TMR2IF 61 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_lcd_init 1786 0 CODE 0 text1 dist/default/production\TCC.X.production.obj
+_spi_init FE2 0 CODE 0 text12 dist/default/production\TCC.X.production.obj
+_lcd_goto 7E4 0 CODE 0 text8 dist/default/production\TCC.X.production.obj
+__end_of_bip 1548 0 CODE 0 text3 dist/default/production\TCC.X.production.obj
+__end_ofi1_bip 14E8 0 CODE 0 text14 dist/default/production\TCC.X.production.obj
+_ANSELH 189 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__end_of_menu 1D10 0 CODE 0 text4 dist/default/production\TCC.X.production.obj
+_SSPBUF 13 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_TMR1ON 80 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_TMR2ON 92 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_OSCCON 8F 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+_INTCON B 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_SSPCON 14 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+_inicializacao 1688 0 CODE 0 text16 dist/default/production\TCC.X.production.obj
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__end_ofi1_menu 1AF6 0 CODE 0 text15 dist/default/production\TCC.X.production.obj
+putch@c 36 0 BANK0 1 cstackBANK0 dist/default/production\TCC.X.production.obj
+_principal 2A 0 CODE 0 text2 dist/default/production\TCC.X.production.obj
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+_printf 72A 0 CODE 0 text5 dist/default/production\TCC.X.production.obj
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\TCC.X.production.obj
+_lcd_write 142C 0 CODE 0 text10 dist/default/production\TCC.X.production.obj
+_buffer 4E 0 BANK0 1 dataBANK0 dist/default/production\TCC.X.production.obj
+saved_w 7E 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__Hinit 24 0 CODE 0 init -
+__Linit 24 0 CODE 0 init -
+_lcd_clear 12D0 0 CODE 0 text9 dist/default/production\TCC.X.production.obj
+i1_menu 1928 0 CODE 0 text15 dist/default/production\TCC.X.production.obj
+__end_of_main 15CE 0 CODE 0 maintext dist/default/production\TCC.X.production.obj
+?i1_printf 77 0 COMMON 1 cstackCOMMON dist/default/production\TCC.X.production.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+i1_spi_read 126C 0 CODE 0 text24 dist/default/production\TCC.X.production.obj
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__pdataBANK0 4D 0 BANK0 1 dataBANK0 dist/default/production\TCC.X.production.obj
+__size_of_inicializacao 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+end_of_initialization 1330 0 CODE 0 cinit dist/default/production\TCC.X.production.obj
+printf@flag 40 0 BANK0 1 cstackBANK0 dist/default/production\TCC.X.production.obj
+_SSPCON2 91 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__stringtab 1000 0 STRING 0 strings dist/default/production\TCC.X.production.obj
+__size_of_putch 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+i1printf@flag 23 0 BANK0 1 cstackBANK0 dist/default/production\TCC.X.production.obj
+i1printf@ap 24 0 BANK0 1 cstackBANK0 dist/default/production\TCC.X.production.obj
+__HbitbssBANK0 0 0 ABS 0 bitbssBANK0 -
+__LbitbssBANK0 0 0 ABS 0 bitbssBANK0 -
+__pbitbssBANK0 238 -1F1 BANK0 1 bitbssBANK0 dist/default/production\TCC.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+__Lstrings 0 0 ABS 0 strings -
+__pstrings 1000 0 STRING 0 strings dist/default/production\TCC.X.production.obj
+__size_of_bip 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__size_ofi1_bip 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__size_of_menu 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Lbank3 0 0 ABS 0 bank3 -
+___latbits 2 0 ABS 0 - C:\Users\ALEXAN~1\AppData\Local\Temp\s7q0.obj
+__Hpowerup 0 0 CODE 0 powerup -
+_SSPSTAT 94 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__size_ofi1_printf 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__ptext1 1786 0 CODE 0 text1 dist/default/production\TCC.X.production.obj
+__ptext2 2A 0 CODE 0 text2 dist/default/production\TCC.X.production.obj
+__ptext3 14E8 0 CODE 0 text3 dist/default/production\TCC.X.production.obj
+__ptext4 1AF6 0 CODE 0 text4 dist/default/production\TCC.X.production.obj
+__end_ofi1_spi_read 129E 0 CODE 0 text24 dist/default/production\TCC.X.production.obj
+__ptext5 72A 0 CODE 0 text5 dist/default/production\TCC.X.production.obj
+__ptext6 1218 0 CODE 0 text6 dist/default/production\TCC.X.production.obj
+__ptext7 1386 0 CODE 0 text7 dist/default/production\TCC.X.production.obj
+__end_of_inicializacao 1786 0 CODE 0 text16 dist/default/production\TCC.X.production.obj
+__ptext8 7E4 0 CODE 0 text8 dist/default/production\TCC.X.production.obj
+__ptext9 12D0 0 CODE 0 text9 dist/default/production\TCC.X.production.obj
+_DADO_RX 4D 0 BANK0 1 dataBANK0 dist/default/production\TCC.X.production.obj
+__size_of_lcd_init 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__size_of_lcd_goto 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+__size_ofi1_menu 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+lcd_goto@pos 33 0 BANK0 1 cstackBANK0 dist/default/production\TCC.X.production.obj
+__size_of_printf 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__end_of_spi_read 12D0 0 CODE 0 text11 dist/default/production\TCC.X.production.obj
+__size_ofi1_lcd_putc 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__size_ofi1_lcd_goto 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+printf@c 42 0 BANK0 1 cstackBANK0 dist/default/production\TCC.X.production.obj
+__end_of__initialization 1330 0 CODE 0 cinit dist/default/production\TCC.X.production.obj
+__end_of_lcd_clear 1304 0 CODE 0 text9 dist/default/production\TCC.X.production.obj
+printf@f 37 0 BANK0 1 cstackBANK0 dist/default/production\TCC.X.production.obj
+__size_of_spi_read 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__size_ofi1_lcd_write 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__size_ofi1_lcd_clear 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__end_of_lcd_goto 7F8 0 CODE 0 text8 dist/default/production\TCC.X.production.obj
+__end_of_spi_init FFE 0 CODE 0 text12 dist/default/production\TCC.X.production.obj
+spi_read@rec 32 0 BANK0 1 cstackBANK0 dist/default/production\TCC.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+i1spi_read@dado 71 0 COMMON 1 cstackCOMMON dist/default/production\TCC.X.production.obj
+i1_putch 120C 0 CODE 0 text19 dist/default/production\TCC.X.production.obj
+i1_lcd_putc 1338 0 CODE 0 text20 dist/default/production\TCC.X.production.obj
+_posicao 4C 0 BANK0 1 bssBANK0 dist/default/production\TCC.X.production.obj
+?_printf 37 0 BANK0 1 cstackBANK0 dist/default/production\TCC.X.production.obj
+__Hcinit 0 0 ABS 0 cinit -
+__Lcinit 0 0 ABS 0 cinit -
+__size_of_spi_init 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+lcd_init@init_value 37 0 BANK0 1 cstackBANK0 dist/default/production\TCC.X.production.obj
+__end_ofi1_lcd_goto 123C 0 CODE 0 text21 dist/default/production\TCC.X.production.obj
+__end_ofi1_lcd_write 142C 0 CODE 0 text23 dist/default/production\TCC.X.production.obj
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__pidataBANK0 7F8 0 CODE 0 idataBANK0 dist/default/production\TCC.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__size_of_xandi 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__pbssBANK0 48 0 BANK0 1 bssBANK0 dist/default/production\TCC.X.production.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__size_of_lcd_putc 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__Hstringtext 0 0 ABS 0 stringtext -
+__Lstringtext 0 0 ABS 0 stringtext -
+__pstringtext 800 0 STRCODE 0 stringtext dist/default/production\TCC.X.production.obj
+__ptext10 142C 0 CODE 0 text10 dist/default/production\TCC.X.production.obj
+_cont_timer 49 0 BANK0 1 bssBANK0 dist/default/production\TCC.X.production.obj
+__ptext20 1338 0 CODE 0 text20 dist/default/production\TCC.X.production.obj
+__ptext11 129E 0 CODE 0 text11 dist/default/production\TCC.X.production.obj
+__ptext21 1228 0 CODE 0 text21 dist/default/production\TCC.X.production.obj
+__ptext12 FE2 0 CODE 0 text12 dist/default/production\TCC.X.production.obj
+__size_of_principal 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__ptext22 123C 0 CODE 0 text22 dist/default/production\TCC.X.production.obj
+__ptext13 1D10 0 CODE 0 text13 dist/default/production\TCC.X.production.obj
+__ptext23 13D4 0 CODE 0 text23 dist/default/production\TCC.X.production.obj
+__ptext14 1488 0 CODE 0 text14 dist/default/production\TCC.X.production.obj
+__ptext24 126C 0 CODE 0 text24 dist/default/production\TCC.X.production.obj
+__ptext15 1928 0 CODE 0 text15 dist/default/production\TCC.X.production.obj
+__ptext16 1688 0 CODE 0 text16 dist/default/production\TCC.X.production.obj
+__CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__end_of_printf 7E4 0 CODE 0 text5 dist/default/production\TCC.X.production.obj
+__ptext17 D8E 0 CODE 0 text17 dist/default/production\TCC.X.production.obj
+__ptext18 15CE 0 CODE 0 text18 dist/default/production\TCC.X.production.obj
+__ptext19 120C 0 CODE 0 text19 dist/default/production\TCC.X.production.obj
+__end_of_lcd_write 1488 0 CODE 0 text10 dist/default/production\TCC.X.production.obj
+__Hend_init 2A 0 CODE 0 end_init -
+__Lend_init 24 0 CODE 0 end_init -
+i1_lcd_goto 1228 0 CODE 0 text21 dist/default/production\TCC.X.production.obj
+__end_ofi1_lcd_putc 1386 0 CODE 0 text20 dist/default/production\TCC.X.production.obj
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+_portas_1 4A 0 BANK0 1 bssBANK0 dist/default/production\TCC.X.production.obj
+__stringdata 800 0 STRCODE 0 stringtext dist/default/production\TCC.X.production.obj
+_portas_2 4B 0 BANK0 1 bssBANK0 dist/default/production\TCC.X.production.obj
+__end_of_xandi 2000 0 CODE 0 text13 dist/default/production\TCC.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\ALEXAN~1\AppData\Local\Temp\s7q0.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+intlevel1 0 0 CODE 0 functab C:\Users\ALEXAN~1\AppData\Local\Temp\s7q0.obj
+__CFG_FOSC$INTRC_NOCLKOUT 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+i1lcd_write@c 72 0 COMMON 1 cstackCOMMON dist/default/production\TCC.X.production.obj
+intlevel2 0 0 CODE 0 functab C:\Users\ALEXAN~1\AppData\Local\Temp\s7q0.obj
+intlevel3 0 0 CODE 0 functab C:\Users\ALEXAN~1\AppData\Local\Temp\s7q0.obj
+intlevel4 0 0 CODE 0 functab C:\Users\ALEXAN~1\AppData\Local\Temp\s7q0.obj
+intlevel5 0 0 CODE 0 functab C:\Users\ALEXAN~1\AppData\Local\Temp\s7q0.obj
+__end_ofi1_lcd_clear 126C 0 CODE 0 text22 dist/default/production\TCC.X.production.obj
+spi_read@dado 31 0 BANK0 1 cstackBANK0 dist/default/production\TCC.X.production.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\TCC.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+start_initialization 1304 0 CODE 0 cinit dist/default/production\TCC.X.production.obj
+i1lcd_goto@pos 73 0 COMMON 1 cstackCOMMON dist/default/production\TCC.X.production.obj
+__end_of_principal 72A 0 CODE 0 text2 dist/default/production\TCC.X.production.obj
+i1lcd_putc@c 75 0 COMMON 1 cstackCOMMON dist/default/production\TCC.X.production.obj
+__size_of_acao 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+__pmaintext 1548 0 CODE 0 maintext dist/default/production\TCC.X.production.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+_selec_portas 23C -1F1 BANK0 1 bitbssBANK0 dist/default/production\TCC.X.production.obj
+__initialization 1304 0 CODE 0 cinit dist/default/production\TCC.X.production.obj
+__end_of_acao FE2 0 CODE 0 text17 dist/default/production\TCC.X.production.obj
+__stringbase 1024 0 STRING 0 strings dist/default/production\TCC.X.production.obj
+lcd_write@c 32 0 BANK0 1 cstackBANK0 dist/default/production\TCC.X.production.obj
+__end_of_lcd_init 1928 0 CODE 0 text1 dist/default/production\TCC.X.production.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+lcd_putc@c 35 0 BANK0 1 cstackBANK0 dist/default/production\TCC.X.production.obj
+i1printf@c 25 0 BANK0 1 cstackBANK0 dist/default/production\TCC.X.production.obj
+i1putch@c 76 0 COMMON 1 cstackCOMMON dist/default/production\TCC.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\TCC.X.production.obj
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta> <class name>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 3 2 CODE
+intentry 0 4 8 3FB 2 CODE
+config 0 2007 400E 2 2 CONFIG
+cstackCOMMON 1 70 70 E 1 COMMON
+cstackBANK0 1 20 20 30 1 BANK0
+stringtext 0 400 800 2C7 2 STRCODE
+text13 0 E88 1D10 178 2 CODE
+text17 0 6C7 D8E 138 2 CODE
+text4 0 D7B 1AF6 10D 2 CODE
+text15 0 C94 1928 E7 2 CODE
+text1 0 BC3 1786 D1 2 CODE
+text16 0 B44 1688 7F 2 CODE
+text18 0 AE7 15CE 5D 2 CODE
+maintext 0 AA4 1548 43 2 CODE
+text3 0 A74 14E8 30 2 CODE
+text14 0 A44 1488 30 2 CODE
+text10 0 A16 142C 2E 2 CODE
+text23 0 9EA 13D4 2C 2 CODE
+text7 0 9C3 1386 27 2 CODE
+text20 0 99C 1338 27 2 CODE
+cinit 0 982 1304 1A 2 CODE
+text9 0 968 12D0 1A 2 CODE
+text11 0 94F 129E 19 2 CODE
+text24 0 936 126C 19 2 CODE
+text22 0 91E 123C 18 2 CODE
+strings 0 800 1000 12 2 STRING
+text21 0 914 1228 A 2 CODE
+text6 0 90C 1218 8 2 CODE
+text19 0 906 120C 6 2 CODE
